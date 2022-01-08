@@ -15,5 +15,9 @@ MonoBehaviour:
   WalkingSpeed: 1.2
   RunningSpeed: 2.5
   CrouchWalkingSpeed: 0.5
-  JumpForce: 300
+  JumpForce: 400
   MouseSensitivity: 0.35
+  SpeedTransitionFactor: 0.05
+  OrientationTransitionFactor: 0.05
+  JumpActivationDelayInSeconds: 0.5
+  AttacksBeforeComboHeavyAttack: 2
