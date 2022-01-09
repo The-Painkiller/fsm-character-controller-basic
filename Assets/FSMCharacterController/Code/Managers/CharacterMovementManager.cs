@@ -49,10 +49,15 @@ namespace FSMCharacterController
                  + _cameraController.transform.forward * _movementDirection.y * Time.fixedDeltaTime * _currentSpeed;
 
             ///Character orientation is restricted if the character is fighting.
-            ///In this case strafing is implemented in Walk and Run states.
+            ///In this case strafing is implemented in Walk and Run states,
+            ///and only the camera direction controls the character direction.
             if (!_fsmManager.IsFighting)
             {
                 TransitionOrientation();
+            }
+            else
+            {
+                _transform.forward = _cameraController.transform.forward;
             }
         }
 

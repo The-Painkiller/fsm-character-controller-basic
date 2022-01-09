@@ -392,5 +392,10 @@ namespace FSMCharacterController
                 }
             }
         }
+
+        public void SetFightingMode(bool active)
+        {
+            _isFighting = active;
+        }
     }
 }
